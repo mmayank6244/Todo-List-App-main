@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: mediumslateblue;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -32,7 +32,16 @@ form button {
     background: white;
     border-radius: 2rem;
 }
-
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+    width: 30%;
+  }
 form button {
     color: rgb(255, 200, 0);
     background: white;
